@@ -1,8 +1,22 @@
-# `react-daisyui-template`
+# `Portfolio Template`
 
-My template for quickly creating new applications using React, Tailwind and daisyUI
+This is my take on a simple portfolio template. The base/config is forked from [Cypotat's React/Daisy UI Template](https://github.com/cypotat/react-daisyui-template/).
 
-<!-- TODO: insert image here -->
+# How to use this template
+
+1. Click "Use Template" on Github
+2. `git clone` your version of the template from bash
+3. Change the avatar, experiences, or skills.
+4. Don't forget to change the contact information / links :)
+5. Push your new changes to Github
+   - `git add . `
+   - `git commit -m "First Commit"`
+   - `git push origin main`
+
+# How to add/change themes
+
+1. All themes are in `tailwind.config.js`, to add themes to your site, use [the official DaisyUI site](https://daisyui.com/docs/themes/) as a reference and modidfy your configuration.
+2. Finally, on `src > config.js`, add your new themes, an ID and a corresponding icon to add it to the navbar.
 
 # Getting Started with Create React App
 
@@ -50,27 +64,3 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
