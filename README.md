@@ -18,6 +18,10 @@ This is my take on a simple portfolio template. The base/config is forked from [
 1. All themes are in `tailwind.config.js`, to add themes to your site, use [the official DaisyUI site](https://daisyui.com/docs/themes/) as a reference and modidfy your configuration.
 2. Finally, on `src > config.js`, add your new themes, an ID and a corresponding icon to add it to the navbar.
 
+# Changing Meta Data
+
+- This template uses the `Helmet` package. Check `src > index.js` or `public > index.html` for existing meta data information. Otherwise, use `Helmet` documentation to modify it.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
