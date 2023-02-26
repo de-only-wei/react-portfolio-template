@@ -4,12 +4,13 @@ import Timeline from "../components/Timeline";
 import TimelineItem from "../components/TimelineItem";
 import Typography from "../components/Typography";
 import Skill from "../components/Skill";
+import { Button } from "react-daisyui";
+import { Link } from "react-router-dom";
 
 // This is a very bare/bland template.
 // For themes specific to you and your personality visit:
 // https://daisyui.com/docs/themes/
 
-// @TODO: If you'd like, a good potential addition to this template is a "projects" section :) It wouldn't be too hard to implement through DaisyUI
 export default function Home() {
 	return (
 		<Typography>
@@ -25,7 +26,9 @@ export default function Home() {
 			{/* END OF AVATAR */}
 
 			{/* HEADER */}
-			<h1 id="home">Hello, I'm John</h1>
+			<h1 id="home">
+				Hello, I'm <span className="text-primary">John</span>
+			</h1>
 
 			{/* DESCRIPTION */}
 			<p>
@@ -38,6 +41,7 @@ export default function Home() {
 				sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
 				mollit anim id est laborum.
 			</p>
+			<div className="divider"></div>
 
 			{/* WORK EXPERIENCE */}
 			<h2 id="experiences"> Work Experience </h2>
@@ -60,38 +64,51 @@ export default function Home() {
 					desc="Stock food and handle cash."
 				/>
 			</Timeline>
-
 			{/* SKILLS */}
-			<h2 id="skills">Relevant Skills</h2>
-			<RelevantSkills>
-				<Skill title="React & Web :)" desc="This site was made with React." />
-				<Skill title="C++" desc="For every CSU Fresno CSCI Major :)" />
-				<Skill title="Tailwind CSS" />
-				<Skill title="This checkmark is hidden" hideCheckmark={true} />
-			</RelevantSkills>
+			<div className="flex flex-col">
+				<h2 id="skills" className="!mb-0">
+					Projects & Skills
+				</h2>
+				<RelevantSkills>
+					<Skill title="React & Web :)" desc="This site was made with React." />
+					<Skill title="C++" desc="For every CSU Fresno CSCI Major :)" />
+					<Skill title="Tailwind CSS" />
+					<Skill title="This checkmark is hidden" hideCheckmark={true} />
+				</RelevantSkills>
+				<Link to="/projects" className="self-end">
+					<Button color="primary" className="items-right max-w-[10em]">
+						View my work
+					</Button>
+				</Link>
+				<div className="divider"></div>
+			</div>
 
 			{/* CONTACT INFORMATION */}
-			<h2 id="contact">Contact Information</h2>
-			<p>
-				Thank you for viewing my page. To get in touch with me, please see the
-				following!
-			</p>
-			<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-				<a
-					href="mailto:johndoe@gmail.com"
-					className="btn btn-primary"
-					target="_blank"
-				>
-					Email Me
-				</a>
+			<div className="bg-base-200 shadow-xl px-8 py-8 rounded-lg mt-10">
+				<h2 id="contact" className="!mt-3">
+					Contact Information
+				</h2>
+				<p>
+					Thank you for viewing my page. To get in touch with me, please see the
+					following!
+				</p>
+				<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+					<a
+						href="mailto:johndoe@gmail.com"
+						className="btn btn-primary"
+						target="_blank"
+					>
+						Email
+					</a>
 
-				<a
-					href="https://www.myperfectresume.com/wp-content/uploads/2020/08/Bartender_Modern_Chrono.png"
-					className="btn btn-primary"
-					target="_blank"
-				>
-					Download my Resume
-				</a>
+					<a
+						href="https://www.myperfectresume.com/wp-content/uploads/2020/08/Bartender_Modern_Chrono.png"
+						className="btn btn-primary"
+						target="_blank"
+					>
+						Resume
+					</a>
+				</div>
 			</div>
 		</Typography>
 	);

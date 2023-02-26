@@ -30,16 +30,21 @@ export default function Navbar(props) {
 
 				<Nav.Center>
 					<Menu horizontal={true} className="hidden lg:flex gap-2">
-						<a href="#home" className="normal-case btn btn-ghost">
+						<a href="/#home" className="normal-case btn btn-ghost">
 							Home
 						</a>
-						<a href="#experiences" className="normal-case btn btn-ghost">
+						<a href="/#experiences" className="normal-case btn btn-ghost">
 							Experiences
 						</a>
-						<a href="#skills" className="normal-case btn btn-ghost">
+						<Link to="/projects">
+							<Button color="ghost" className="flex normal-case">
+								Projects
+							</Button>
+						</Link>
+						<a href="/#skills" className="normal-case btn btn-ghost">
 							Skills
 						</a>
-						<a href="#contact" className="normal-case btn btn-ghost">
+						<a href="/#contact" className="normal-case btn btn-ghost">
 							Contact
 						</a>
 					</Menu>

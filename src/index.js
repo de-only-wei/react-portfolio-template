@@ -7,6 +7,7 @@ import { config } from "./config";
 import { routes } from "./routes";
 import Home from "./pages/Home";
 import "./styles/index.css";
+import Projects from "./pages/Projects";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -19,6 +20,7 @@ root.render(
 		<Routes>
 			<Route exact path="/" element={<Page config={config} />}>
 				<Route path="/" element={<Home />} />
+				<Route path="/projects" element={<Projects />} />
 			</Route>
 		</Routes>
 	</Router>

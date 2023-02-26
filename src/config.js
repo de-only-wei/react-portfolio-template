@@ -7,7 +7,7 @@ import { routes } from "./routes";
 export const config = {
 	title: "John Doe",
 	home: routes.home,
-	pages: [],
+	pages: [routes.projects],
 	themes: [
 		{
 			name: "Light",

@@ -8,7 +8,7 @@ export default function RelevantSkills({ title, desc, hideCheckmark }) {
 				{hideCheckmark ? (
 					""
 				) : (
-					<div className="inline float-left my-[3px] mr-2">
+					<div className="inline float-left my-[3px] mr-2 text-success">
 						<CheckMark />
 					</div>
 				)}

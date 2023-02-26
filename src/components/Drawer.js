@@ -21,28 +21,33 @@ export default function Drawer(props) {
 			<Divider className="h-0.5 my-2 mx-4" />
 			<div className="flex flex-col">
 				<a
-					href="#home"
+					href="/#home"
 					className="normal-case btn btn-ghost justify-start"
 					onClick={props.toggleDrawer}
 				>
 					Home
 				</a>
 				<a
-					href="#experiences"
+					href="/#experiences"
 					className="normal-case btn btn-ghost justify-start"
 					onClick={props.toggleDrawer}
 				>
 					Experiences
 				</a>
+				<Link to="/projects">
+					<span className="btn btn-ghost flex normal-case justify-start">
+						Projects
+					</span>
+				</Link>
 				<a
-					href="#skills"
+					href="/#skills"
 					className="normal-case btn btn-ghost justify-start"
 					onClick={props.toggleDrawer}
 				>
 					Skills
 				</a>
 				<a
-					href="#contact"
+					href="/#contact"
 					className="normal-case btn btn-ghost justify-start"
 					onClick={props.toggleDrawer}
 				>
