@@ -1,4 +1,4 @@
-import { SunIcon, MoonIcon } from "@heroicons/react/outline";
+import { SunIcon, MoonIcon, PencilIcon } from "@heroicons/react/outline";
 
 import { routes } from "./routes";
 
@@ -19,6 +19,11 @@ export const config = {
 			id: "dark",
 			icon: <MoonIcon className="h-6 w-6" />,
 		},
+		{
+			name: "Retro",
+			id: "retro",
+			icon: <PencilIcon className="h-6 w-6" />,
+		}
 	],
 	masonryColumns: {
 		default: 4,

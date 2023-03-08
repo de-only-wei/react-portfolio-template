@@ -19,7 +19,7 @@ export default function Home() {
 				<div className="w-48 h-full rounded-full">
 					<img
 						className="!m-0"
-						src="https://media.gettyimages.com/photos/headshot-of-male-caucasian-looking-at-camera-picture-id674323073"
+						src="https://media.licdn.com/dms/image/C5603AQGRi9zHYPNKKQ/profile-displayphoto-shrink_400_400/0/1661584840169?e=1683763200&v=beta&t=Y37OWLgx7_Evg7vGha3vD-TuomHpYfuRMtpz6OqTnVE"
 					/>
 				</div>
 			</div>
@@ -27,7 +27,7 @@ export default function Home() {
 
 			{/* HEADER */}
 			<h1 id="home">
-				Hello, I'm <span className="text-primary">John</span>
+				Hello, I'm <span className="text-primary">Not John</span>
 			</h1>
 
 			{/* DESCRIPTION */}
